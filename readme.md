@@ -14,8 +14,8 @@
 `cd scully-inliner`
 `npm install express`
 
-- create server.js
-`
+- create server.js<br/>
+
   var Inliner = require('inliner');
   var fs = require('fs');
   const express = require('express');
@@ -39,14 +39,14 @@
     });
 
   });
-`
+
 
 ## Workflow
-- Make static site from angular build using scully. Angular build result itself is not a static site, so scully is there.
-`ng build`
+- Make static site from angular build using scully. Angular build result itself is not a static site, so scully is there.<br/>
+`ng build`<br/>
 `npm run scully`
-- ./dist/static folder will contain the result. If you click index.html, you will see the page works exactly same as the angular app.
-- copy those files inside the node server app's public folder.
+- `./dist/static` folder will contain the result. If you click index.html, you will see the page works exactly same as the angular app.
+- copy those files inside the node server app's `public` folder.
 - Run `node server` to get inliner result.
 
 
