@@ -7,27 +7,24 @@
 - do some route configuration in `./scully.<projectName>.config.ts` file.
 
 ### 2. [inliner](https://github.com/remy/inliner)
-<br/>`npm install -g inliner`
+`npm install -g inliner`
 
 ### 3. Node/Express server to do inliner convert.
-<br/>`npm init scully-inliner`
-<br/>`cd scully-inliner`
-<br/>`npm install express`
+`npm init scully-inliner`<br/>
+`cd scully-inliner`<br/>
+`npm install express`
 
 - create server.js<br/>
 
 <html>
   <header>
+
     var Inliner = require('inliner');
     var fs = require('fs');
     const express = require('express');
     const app = express();
     const port = 3000;
-
-
     app.use(express.static('public'));
-
-
     app.listen(port, () => {
       console.log(`listening on port ${port}!`);
 
@@ -41,6 +38,7 @@
       });
 
     });
+    
   </header>
 </html>
 
